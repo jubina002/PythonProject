@@ -1,3 +1,4 @@
+#Using while loop
 from time import *
 import random as r
 
@@ -16,19 +17,30 @@ def speed_time(time_s, time_e, userinput):
  time_R = round(time_delay, 2)
  speed = len(userinput)/ time_R
  return round(speed)
- 
-test = ["Hey hope you are learning python", 
-        "Welcome to Git"]
-test1 = r.choice(test)
-print("---Typing speed---")
-print(test1)
-print()
-print()
- #time starts after input is provided
-time_1 = time()
-#take input from user
-testinput=input("Enter: ")
-time_2 = time()
 
-print("Speed: ", speed_time(time_1, time_2, testinput),"w/sec")
-print("Error: ", mistake(test1, testinput))
+if __name__ == '__main__':
+    while True:
+        ck = input("Ready to test: Yes/No: ")
+        if ck =='Yes':
+            test = ["Hey hope you are learning python", 
+            "Welcome to Git"]
+            test1 = r.choice(test)
+            print("---Typing speed---")
+            print(test1)
+            print()
+            print()
+            #time starts after input is provided
+            time_1 = time()
+            #take input from user
+            testinput=input("Enter: ")
+            time_2 = time()
+
+            print("Speed: ", speed_time(time_1, time_2, testinput),"w/sec")
+            print("Error: ", mistake(test1, testinput))
+
+        elif ck == 'No':
+            print("Thank You")
+            break
+
+        else:
+            print("Wrong input")
