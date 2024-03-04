@@ -10,6 +10,7 @@ obj.login("yourmail@gmail.com", "pwww")
 subject = "Testing Python"
 body= "Hey!! what's up"
 message = "subject:{}\n\n{}".format(subject, body)
+# 1st -> {subject} and 2nd -> {body}
 list=["user1@gmail.com",
       "user2@gmail.com"]
 obj.sendmail("yourmail@gmail.com", list, message)
