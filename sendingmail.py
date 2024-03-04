@@ -1,3 +1,4 @@
+#pip install secure-smtplib
 import smtplib as s
 
 obj = s.SMTP("smtp.gmail.com", 587)
