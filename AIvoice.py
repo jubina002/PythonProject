@@ -59,7 +59,7 @@ if __name__ == '__main__':
             elif "exit" in data1:
                 speechtxt("Thank u")
                 break
-            time.slee(10)
+            time.sleep(10)
     else:
         print("Thanks")
 
