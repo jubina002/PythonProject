@@ -25,3 +25,10 @@ win.mainloop()
 # To convert it into .exe File
 # Go to the ScreenShot.py bhayeko folder
 # open cmd -> pyinstaller --onefile ScreenShot.py
+# OR
+# pyinstaller -F -w -i watermelon.ico ScreenShot.py
+# -F   (all in 1 file)
+# -w   (removes terminal window)
+# -i icon.ico  (adds custom icon to .exe)
+# ScreenShot.py  (name of your main python file)
+# Look inside the dist file
