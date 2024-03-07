@@ -1,0 +1,25 @@
+How to create, activate, and deactivate python Virtual Environment and Requirements txt
+
+Create a folder (Eg: Virtual)
+Inside the virtual folder create a py file(demo.py)
+Open cmd in virtual folder
+i. pip install virtualenv
+ii. virtualenv hey (hey is the name of the file)
+Go inside the hey folder that is created and inside the script folder, open cmd
+iii. activate
+iv. cd..
+v. cd..
+vi. pip freeze > requirement.txt (To know what file to importin your virtual env)
+vii. pip install -r.\requirement.txt (To install all the required module at once)
+
+If you want to make a clone of your system (virtual env)
+deactivate hey by writing 'deactivate' in cmd
+i. deactivate
+In Desktop\Virtual>
+ii. virtualenv --system-site-packages heyWelcome
+To delete
+iii. del heyWelcome
+
+If you wanna share the file to your friend, friend -> create a virtual env in his/her own pc
+Send him the demo.py(just an eg... send your actual py file)
+Send the requirement.txt so the required module will be installed
